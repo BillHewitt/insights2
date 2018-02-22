@@ -47,4 +47,7 @@ class PagesController < ApplicationController
   def questionshome
   end
 
+  def questionshomesettings
+  end
+
 end

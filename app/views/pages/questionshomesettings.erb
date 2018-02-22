@@ -22,19 +22,15 @@
 
     <div class="card">
       <div class="row">
-      	<div class="col-md-3">
-          <div class="card-img-bottom">
-
-        </div>
-        </div>
-        <div class="col-md-9">
+        <div class="col-md-12">
         	<div class="card-body">
 	        	<div class="row">
 	        		<div class="col-8">
-	        			<div class="float-left">
-	        				
-							  <h2>Employee Engagement
-							  </h3>
+	        			<div class="float-left">	
+							<ol class="breadcrumb">
+							  	<li class="breadcrumb-item"><%= link_to "Employee Engagement", pages_questionshome_path %></li>
+							    <li class="breadcrumb-item active" aria-current="page">Settings</li>
+							  </ol>
 
 	        			</div>
 	        		</div>
@@ -49,26 +45,64 @@
 				</div>
 
 
-				<div class="row">
-	        		<div class="col-8">
+				<div class="row space">
+			        <div class="col-md-8 order-md-1">
+			          <h4 class="mb-3">Survey setup</h4>
+			          <form class="needs-validation" novalidate="">
+			            <div class="row">
+			              <div class="col-md-12 mb-12">
+			                <label for="firstName">Choose which teams you'd like to send the survey to</label>
+			                <input type="text" class="form-control" id="firstName" placeholder="" value="" required="">
+			              </div>
+			              <div class="col-md-12 mb-12">
+			                <label for="firstName">How many questions in each survey?</label>
+			                <select class="form-control">
+							  <option>5</option>
+							  <option>10</option>
+							</select>
+			              </div>
+			              <div class="col-md-12 mb-12">
+			              	<div class="container">
+			                <div class="form-check">
+			                	<br>
+							  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+							  <label class="form-check-label" for="defaultCheck1">
+							    Include eNPS
+							  </label>
+							</div>
+							</div>
+			              </div>
+			              <div class="col-md-12 mb-12">
+			              	<div class="container">
+			                <div class="form-check">
+			                	<br>
+							  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+							  <label class="form-check-label" for="defaultCheck1">
+							    Include open feedback
+							  </label>
+							</div>
+							</div>
+			              </div>
+			              <div class="col-md-12 mb-12">
+			              	<div class="container">
+			                <div class="form-check">
+			                	<br>
+							  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+							  <label class="form-check-label" for="defaultCheck1">
+							    Include action board
+							  </label>
+							</div>
+							</div>
+			              </div>
+			            </div>
+			            <br>
+			            <%= link_to pages_questionshome_path do %>
+								<button type="button" class="btn btn-warning ">Save</button>
+							<% end %>
+			          </form>
+			        </div>
+			      </div>
 
-	        			<p class="gap">You've setup your survey to have 5 questions, including eNPS, open feedback and the action board. <b>Sending to Team A, Team B, Team C.</b></p>
-
-	        			
-							<button type="button" class="btn btn-warning ">Send survey now</button>
-							<button type="button" class="btn btn-light ">Download results</button>
-
-					
-
-	        			<br>
-	        			<br>
-
-          
-          	<a href="#" data-toggle="collapse" data-target="#viewdetails">View question library <em class="fa fa-chevron-down"></em></a>
-
-	        			
-	        		</div>
-				</div>
 			</div>
 </div>
 				
