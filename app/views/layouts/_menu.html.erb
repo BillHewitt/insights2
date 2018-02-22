@@ -15,18 +15,7 @@
         </li>
 
       <% end -%>
-
-        <% if current_page?(pages_action_path) -%>
-         
-          <li class="nav-item active">
-            <%= link_to "ACTIONS", pages_action_path, :class => 'nav-link' %>
-          </li>
-       <% else -%>
-          <li class="nav-item">
-            <%= link_to "ACTIONS", pages_action_path, :class => 'nav-link' %>
-          </li>
-       <% end -%>
-
+      
     </ul>
   </div>
 </nav>
