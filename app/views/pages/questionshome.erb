@@ -3,7 +3,7 @@
 	<div class="col-6">
 		<nav aria-label="breadcrumb" role="navigation">
 		  <ol class="breadcrumb">
-		    <li class="breadcrumb-item active" aria-current="page">Insights</li>
+		    <li class="breadcrumb-item active" aria-current="page">Survey</li>
 		  </ol>
 		</nav>
 	</div>
@@ -30,7 +30,7 @@
         <div class="col-md-9">
         	<div class="card-body">
 	        	<div class="row">
-	        		<div class="col-8">
+	        		<div class="col-6">
 	        			<div class="float-left">
 	        				
 							  <h2>Employee Engagement
@@ -38,11 +38,11 @@
 
 	        			</div>
 	        		</div>
-	        		<div class="col-4">
+	        		<div class="col-6">
 						<div class="float-right">
-							
+							<button type="button" class="btn btn-light" data-toggle="modal" data-target="#myModal3">Send test survey</button>
 							<%= link_to pages_questionshomesettings_path do %>
-								<button type="button" class="btn btn-light ">Settings</button>
+								<button type="button" class="btn btn-light ">Settings <i class="fa fa-cog"></i></button>
 							<% end %>
 						</div>
 					</div>
@@ -52,11 +52,11 @@
 				<div class="row">
 	        		<div class="col-8">
 
-	        			<p class="gap">You've setup your survey to have 5 questions, including eNPS, open feedback and the action board. <b>Sending to Team A, Team B, Team C.</b></p>
+	        			<p class="gap">You're pulse survey is scheduled to be sent every Thursday afternoon at 2pm to <b>Team A, Team B, Team C.</b>   <a class="bill" href="#">Pause survey <em class="fa fa-pause"></em></a> </p>
 
-	        			
-							<button type="button" class="btn btn-warning ">Send survey now</button>
-							<button type="button" class="btn btn-light ">Download results (CSV)</button>
+	        			<%= link_to pages_engagement_path do %>
+							<button type="button" class="btn btn-warning ">See Dashboard</button>
+						<% end %>
 
 					
 

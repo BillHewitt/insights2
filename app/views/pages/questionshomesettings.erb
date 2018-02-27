@@ -3,7 +3,7 @@
 	<div class="col-6">
 		<nav aria-label="breadcrumb" role="navigation">
 		  <ol class="breadcrumb">
-		    <li class="breadcrumb-item active" aria-current="page">Surveys</li>
+		    <li class="breadcrumb-item active" aria-current="page">Survey</li>
 		  </ol>
 		</nav>
 	</div>
@@ -45,25 +45,49 @@
 				<div class="row space">
 			        <div class="col-md-8 order-md-1">
 			          <h4 class="mb-3">Survey setup</h4>
+
+
+			          <form>
+						  <div class="form-group">
+						    <label for="exampleFormControlInput1">What teams would you like to send the survey to?</label>
+						    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Team A, Team B">
+						  </div>
+						  <div class="form-group">
+						    <label for="exampleFormControlSelect1">How often would you like to send the surveys?</label>
+						    <select class="form-control" id="exampleFormControlSelect1">
+						      <option>Every week</option>
+						      <option>Every month</option>
+						    </select>
+						    <small>We'll send 5 short questions every week. Great for an up to date view of your organisation</small>
+						  </div>
+						  <div class="form-group">
+						    <label for="exampleFormControlSelect1">What day would you like to send the surveys?</label>
+						    <select class="form-control" id="exampleFormControlSelect1">
+						      <option>Monday</option>
+						      <option>Tuesday</option>
+						      <option>Wednesday</option>
+						      <option>Thursday</option>
+						      <option>Friday</option>
+						    </select>
+						    <small>We've found response rates are best in the afternoon, so we'll always send surveys out at 2pm</small>
+						  </div>
+						</form>
+
+
+
 			          <form class="needs-validation" novalidate="">
 			            <div class="row">
+			              
 			              <div class="col-md-12 mb-12">
-			                <label for="firstName">Choose which teams you'd like to send the survey to</label>
-			                <input type="text" class="form-control" id="firstName" placeholder="" value="" required="">
-			              </div>
-			              <div class="col-md-12 mb-12">
-			                <label for="firstName">How many questions in each survey?</label>
-			                <select class="form-control">
-							  <option>5</option>
-							  <option>10</option>
-							</select>
-			              </div>
-			              <div class="col-md-12 mb-12">
-			                <label for="firstName">Survey status</label>
-			                <select class="form-control">
-							  <option>Created</option>
-							  <option>Opened</option>
-							</select>
+			              	<div class="container">
+			                <div class="form-check">
+			                	<br>
+							  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+							  <label class="form-check-label" for="defaultCheck1">
+							    Include open feedback
+							  </label>
+							</div>
+							</div>
 			              </div>
 			              <div class="col-md-12 mb-12">
 			              	<div class="container">
@@ -82,7 +106,7 @@
 			                	<br>
 							  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
 							  <label class="form-check-label" for="defaultCheck1">
-							    Include open feedback
+							    Include action board
 							  </label>
 							</div>
 							</div>
@@ -93,7 +117,7 @@
 			                	<br>
 							  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
 							  <label class="form-check-label" for="defaultCheck1">
-							    Include action board
+							    Send reminder email
 							  </label>
 							</div>
 							</div>
