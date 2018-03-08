@@ -59,6 +59,8 @@
 	  	<div class="row">
 	        <div class="col-7">
 	        	<br>
+	        	<h3>Schedule</h3>
+	        	<br>
 	        	<form>
 				  <div class="form-group">
 				    <label for="exampleFormControlInput1"><b>Which team(s) would you like to send the pulse survey to?</b></label>
@@ -68,7 +70,7 @@
 	        </div>
 	    </div>
 	    <div class="row">
-	        <div class="col-7">
+	        <div class="col-7 bill">
 	        	<label for="exampleFormControlInput1"><b>How often would you like to send the surveys?</b></label>
 	        	<form class="form-inline">
 				    <div class="form-check">
@@ -83,42 +85,29 @@
 
 				    <div class="form-check">
 				        <input class="form-check-input" name="group20" type="radio" id="radio122">
-				        <label class="form-check-label" for="radio122">Every month </label>
+				        <label class="form-check-label" for="radio122">Every four weeks </label>
 				    </div>
 				</form>
 				<p class="text-muted small 2">We'll send 5 quick questions each week, great for an up-to-date view of the health of your organisation</p>
 	        </div>
 	    </div>
 	    <div class="row">
-	        <div class="col-7">
-	        	<label for="exampleFormControlInput1"><b>Which day would you like to send the surveys on?</b></label>
-	        	<form class="form-inline">
-				    <div class="form-check">
-				        <input class="form-check-input" name="group20" type="radio" id="radio120" checked="checked">
-				        <label class="form-check-label" for="radio120">Mon </label>
-				    </div>
-
-				    <div class="form-check">
-				        <input class="form-check-input" name="group20" type="radio" id="radio121">
-				        <label class="form-check-label" for="radio121">Tue </label>
-				    </div>
-
-				    <div class="form-check">
-				        <input class="form-check-input" name="group20" type="radio" id="radio122">
-				        <label class="form-check-label" for="radio122">Wed </label>
-				    </div>
-
-				    <div class="form-check">
-				        <input class="form-check-input" name="group20" type="radio" id="radio122">
-				        <label class="form-check-label" for="radio122">Thu </label>
-				    </div>
-
-				    <div class="form-check">
-				        <input class="form-check-input" name="group20" type="radio" id="radio122">
-				        <label class="form-check-label" for="radio122">Fri </label>
-				    </div>
+	        <div class="col-7 bill">
+	        	<label for="exampleFormControlInput1"><b>Survey start date</b></label>
+	        	<form>
+				  <div class="form-group">
+				    <input type="text" class="form-control" id="" placeholder="This should trigger a date picker">
+				  </div>
 				</form>
-				<p class="text-muted small 2">We'll always send your surveys at 2.00pm as we typically find there's a higher response rate in the afternoon</p>
+				<p class="text-muted small">We'll always send your surveys at 2.00pm as we typically find there's a higher response rate in the afternoon</p>
+	        </div>
+	    </div>
+	    <div class="row">
+	        <div class="col-7">
+		        <div class="alert alert-success" role="alert">
+		        	<label for="exampleFormControlInput1"><b>Schedule summary</b></label>
+					<p>We'll send your pulse surveys {{every week}} on {{Day}} at 2.00pm, starting 8 March.</p>
+				</div>
 	        </div>
 	    </div>
 	    <div class="row">
@@ -126,6 +115,8 @@
 	    	<hr>
 	    </div>
 		</div>
+	        	<h3>eNPS</h3>
+	        	<br>
 	    <div class="row">
 	        <div class="col-7">
 		        <form class="form-inline">
@@ -153,7 +144,7 @@
 				        <label class="form-check-label" for="radio121">Every 12 weeks <span class="badge badge-light">Recommended</span></label>
 				    </div>
 				</form>
-				<p class="text-muted small 2">Every 4 weeks, we'll include the eNPS question "I would recommend {{Tenant}} as a place to work" so you can track your eNPS score over time</p>
+				<p class="text-muted small 2">We'll include the eNPS question in the first survey  and then {{every 4 weeks}} after that so you can track your eNPS score over time</p>
 	        </div>
 	    </div>
 	    <div class="row">
@@ -163,6 +154,8 @@
 		</div>
 	    <div class="row">
 	        <div class="col-7">
+	        	<h3>Customisation</h3>
+	        	<br>
 	        	<form>
 				  <div class="form-group">
 				    <label for="exampleFormControlInput1"><b>Your company name</b></label>
@@ -172,13 +165,9 @@
 				<p class="text-muted small">In some of the questions, we'll include your company name. Just double check we've formatted it correctly above. e.g I am familiar with and understand the mission of {{Tenant}}</p>
 	        </div>
 	    </div>
-	    <div class="row">
-	        <div class="col-7">
-	    		<hr>
-	    	</div>
-		</div>
+	    
 		<div class="row">
-	        <div class="col-7">
+	        <div class="col-7 bill">
 		        <form class="form-inline">
 		        	<div class="form-check">
 					  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
@@ -209,9 +198,11 @@
 <%-# Tab 2 begins -%>
 	  <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
 	  	<br>
+	  	<h3>People</h3>
+	  </br>
 	  	<div class="row">
 	        <div class="col-7">
-	        	<label for="exampleFormControlInput1"><b>Shall we send a reminder email to your staff if they haven't completed their survey?</b></label>
+	        	<label for="exampleFormControlInput1"><b>Send a reminder email to your people</b></label>
 	        	<form class="form-inline">
 				    <div class="form-check">
 				        <input class="form-check-input" name="group20" type="radio" id="radio120" checked="checked">
@@ -223,7 +214,7 @@
 				        <label class="form-check-label" for="radio121">After 3 days </label>
 				    </div>
 				</form>
-				<p class="text-muted small 2">If someone hasn't completed their survey yet, we'll send them a friendly follow up email. This will help improve your response rate.</p>
+				<p class="text-muted small 2">If someone hasn't completed their survey yet, we'll send them a friendly reminder. This will help improve your response rate.</p>
 	        </div>
 	    </div>
 
@@ -232,10 +223,12 @@
 	    		<hr>
 	    	</div>
 		</div>
+	  	<h3>Admin</h3>
+	  </br>
 
 	    <div class="row">
 	        <div class="col-7">
-	        	<label for="exampleFormControlInput1"><b>We know you're busy. We'll send you a reminder email 24 hours before a pulse survey is about to run, incase you want to change any settings.</b></label>
+	        	<label for="exampleFormControlInput1"><b>Send me a 24 hour reminder email</b></label>
 	        	<form class="form-inline">
 				    <div class="form-check">
 				        <input class="form-check-input" name="group20" type="radio" id="radio120" checked="checked">
@@ -247,17 +240,17 @@
 				        <label class="form-check-label" for="radio121">Yes please </label>
 				    </div>
 				</form>
-				<p class="text-muted small 2">This email will only be sent to you and any other colleagues that you might want notified</p>
+				<p class="text-muted small 2">We'll send you a reminder email 24 hours before a pulse survey is about to run, in case you want to change any settings.</p>
 	        </div>
 	    </div>
 
 	     <div class="row">
-	        <div class="col-7">
-	        	<label for="exampleFormControlInput1"><b>To give you the confidence the survey schedule is working as expected, we'll send you an email notification to let you know when they've been successfully triggered.</b></label>
+	        <div class="col-7 bill">
+	        	<label for="exampleFormControlInput1"><b>Send me a confirmation email</b></label>
 	        	<form class="form-inline">
 				    <div class="form-check">
 				        <input class="form-check-input" name="group20" type="radio" id="radio120" checked="checked">
-				        <label class="form-check-label" for="radio120">No need, I trust you</label>
+				        <label class="form-check-label" for="radio120">No thanks</label>
 				    </div>
 
 				    <div class="form-check">
@@ -265,19 +258,18 @@
 				        <label class="form-check-label" for="radio121">Yes please </label>
 				    </div>
 				</form>
-				<p class="text-muted small 2">This email will only be sent to you and any other colleagues that you might want notified</p>
+				<p class="text-muted small 2">We'll send you a confirmation email to let you know that the surveys have been successfully sent.</p>
 	        </div>
 	    </div>
 
 	    <div class="row">
-	        <div class="col-7">
+	        <div class="col-7 bill">
 	        	<form>
 				  <div class="form-group">
-				    <label for="exampleFormControlInput1"><b>Which email address(es) would you like to receive the notification emails to?</b></label>
+				    <label for="exampleFormControlInput1"><b>Which email address(es) would you like to receive the admin notifications to?</b></label>
 				    <input type="text" class="form-control" id="" placeholder="">
 				  </div>
 				</form>
-				<p class="text-muted small">Just let us know your email address and any other admins that may want to be kept in the loop too</p>
 	        </div>
 	    </div>
 
@@ -297,9 +289,11 @@
 	  	<div class="row">
 	        <div class="col-7">
 	        	<br>
+	        	<h3>Survey Sender</h3>
+	        	<br>
 	        	<form>
 				  <div class="form-group">
-				    <label for="exampleFormControlInput1"><b>Choose your default email address</b></label>
+				    <label for="exampleFormControlInput1"><b>Choose your <span class="badge badge-light">sender</span> email address</b></label>
 				    <input type="text" class="form-control" id="" value="Defaulttostandardemail@insights.com">
 				  </div>
 				</form>
@@ -307,10 +301,10 @@
 	        </div>
 	    </div>
 	    <div class="row">
-	        <div class="col-7">
+	        <div class="col-7 bill">
 	        	<form>
 				  <div class="form-group">
-				    <label for="exampleFormControlInput1"><b>Choose your default send from name</b></label>
+				    <label for="exampleFormControlInput1"><b>Choose your <span class="badge badge-light">sender</span> name</b></label>
 				    <input type="text" class="form-control" id="" value="Shaun Bradley">
 				  </div>
 				</form>
@@ -337,7 +331,7 @@
 				    <textarea class="form-control"  rows="3" value="Hey, we'd love your feedback... Have your say and help us create a work environment
 we're all proud to be part of!"></textarea>
 				  </div>
-				<p class="text-muted small">This will be the email that your staff receive before answering their surveys. Feel free to add your own unique message to it. Make sure you let them know why you want them to answer the survey.</p>
+				<p class="text-muted small">This will be the email that your people receive {{every week}} before answering their survey. Feel free to add your own unique message to it. Make sure you let them know why you want them to answer the survey.</p>
 	        </div>
 	    </div>
 	    <div class="row">
@@ -360,7 +354,7 @@ we're all proud to be part of!"></textarea>
 				    <textarea class="form-control"  rows="3" value="Hey, we'd love your feedback... Have your say and help us create a work environment
 we're all proud to be part of!"></textarea>
 				  </div>
-				<p class="text-muted small">This will be the email that your staff receive to prompt them to answer the surey if they happened to have missed it in their inbox.</p>
+				<p class="text-muted small">This will be the reminder email that your people receive to prompt them to answer the surey if they happened to have missed it in their inbox.</p>
 	        </div>
 	    </div>
 	    <div class="row">
