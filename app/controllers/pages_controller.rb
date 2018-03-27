@@ -50,4 +50,7 @@ class PagesController < ApplicationController
   def questionshomesettings
   end
 
+  def questionstimeline
+  end
+
 end
